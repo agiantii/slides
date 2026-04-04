@@ -1,0 +1,30 @@
+{
+  "name": "slidev-workspace-starter",
+  "version": "1.0.0",
+  "description": "A workspace for Slidev presentations",
+  "scripts": {
+    "export-og": "slidev-workspace export-og",
+    "preview": "slidev-workspace preview",
+    "help": "slidev-workspace --help",
+    "deploy": "node scripts/push_dist_to_server.js",
+    "build": "slidev-workspace build"
+  },
+  "dependencies": {
+    "node-ssh": "^13.2.1",
+    "slidev-workspace": "^0.9.3",
+    "ssh2-sftp-client": "^12.1.1"
+  },
+  "keywords": [
+    "slidev",
+    "workspace",
+    "presentation",
+    "slides",
+    "slidev-workspace"
+  ],
+  "author": "Leo Chiu",
+  "license": "MIT",
+  "devDependencies": {
+    "@slidev/cli": "catalog:",
+    "playwright-chromium": "^1.56.1"
+  }
+}
