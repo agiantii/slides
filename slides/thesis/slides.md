@@ -4,7 +4,7 @@ colorSchema: auto
 author: agiantii
 date: 2025/12/27
 transition: slide-left
-
+title: 浙江传媒学院开题答辩
 ---
 
 <br>
@@ -27,9 +27,6 @@ alt="alt text"/> -->
   </span>
 </div> -->
 <!-- 居中 -->
-
-
-
 
 
 <br>
