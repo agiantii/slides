@@ -9,6 +9,12 @@ catalogs:
     '@slidev/cli':
       specifier: ^52.11.0
       version: 52.11.0
+    '@slidev/theme-default':
+      specifier: ^0.25.0
+      version: 0.25.0
+    '@slidev/theme-seriph':
+      specifier: ^0.25.0
+      version: 0.25.0
 
 importers:
 
@@ -27,6 +33,12 @@ importers:
       '@slidev/cli':
         specifier: 'catalog:'
         version: 52.11.0(@babel/parser@7.29.2)(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@types/markdown-it@14.1.2)(@types/node@22.18.13)(@vue/compiler-sfc@3.5.32)(lightningcss@1.30.2)(markdown-it-async@2.2.0)(playwright-chromium@1.56.1)(postcss@8.5.8)
+      '@slidev/theme-default':
+        specifier: 'catalog:'
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: 'catalog:'
+        version: 0.25.0
       playwright-chromium:
         specifier: ^1.56.1
         version: 1.56.1
@@ -36,6 +48,36 @@ importers:
       slidev-theme-frankfurt:
         specifier: ^1.0.8
         version: 1.0.8(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@vue/compiler-sfc@3.5.32)(markdown-it-async@2.2.0)(typescript@5.9.3)(vite@7.3.1(@types/node@22.18.13)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
+
+  slides/data-structure/chapter1/dijkstra:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.1
+        version: 52.14.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@types/markdown-it@14.1.2)(@types/node@22.18.13)(@vue/compiler-sfc@3.5.32)(lightningcss@1.30.2)(markdown-it-async@2.2.0)(markdown-it@14.1.1)(playwright-chromium@1.56.1)(postcss@8.5.8)
+      '@slidev/theme-default':
+        specifier: latest
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: latest
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.29
+        version: 3.5.32(typescript@5.9.3)
+
+  slides/template:
+    dependencies:
+      '@slidev/cli':
+        specifier: ^52.14.1
+        version: 52.14.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@types/markdown-it@14.1.2)(@types/node@22.18.13)(@vue/compiler-sfc@3.5.32)(lightningcss@1.30.2)(markdown-it-async@2.2.0)(markdown-it@14.1.1)(playwright-chromium@1.56.1)(postcss@8.5.8)
+      '@slidev/theme-default':
+        specifier: latest
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: latest
+        version: 0.25.0
+      vue:
+        specifier: ^3.5.29
+        version: 3.5.32(typescript@5.9.3)
 
   slides/test/typst:
     dependencies:

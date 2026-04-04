@@ -2,8 +2,8 @@ packages:
   - slides/**
 
 catalog:
-  vue: ^3.5.13
   "@slidev/cli": ^52.11.0
-  "@slidev/theme-default": latest
-  "@slidev/theme-seriph": latest
+  "@slidev/theme-default": ^0.25.0
+  "@slidev/theme-seriph": ^0.25.0
   slidev-theme-dracula: ^0.2.0
+  vue: ^3.5.13

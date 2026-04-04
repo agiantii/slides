@@ -6,7 +6,7 @@
     "export-og": "slidev-workspace export-og",
     "preview": "slidev-workspace preview",
     "help": "slidev-workspace --help",
-    "deploy": "node scripts/push_dist_to_server.js",
+    "slides:deploy": "node scripts/push_dist_to_server.js",
     "build": "slidev-workspace build"
   },
   "dependencies": {
@@ -25,6 +25,8 @@
   "license": "MIT",
   "devDependencies": {
     "@slidev/cli": "catalog:",
+    "@slidev/theme-default": "catalog:",
+    "@slidev/theme-seriph": "catalog:",
     "playwright-chromium": "^1.56.1",
     "slidev-addon-typst": "^1.0.2",
     "slidev-theme-frankfurt": "^1.0.8"
