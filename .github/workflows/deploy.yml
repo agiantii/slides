@@ -43,14 +43,14 @@ jobs:
         with:
           path: dist
       - name: copy file via ssh password
-              uses: appleboy/scp-action@v0.1.7
-              with:
-                host: ${{ secrets.HOST }}
-                username: ${{ secrets.USERNAME }}
-                password: ${{ secrets.PASSWORD }}
-                port: ${{ secrets.PORT }}
-                source: "./dist" # 直接把dist传到服务器 
-                target: ${{ secrets.TARGET }}
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          source: "./dist" # 直接把dist传到服务器 
+          target: ${{ secrets.TARGET }}
   # deploy-github:
   #   environment:
   #     name: github-pages
