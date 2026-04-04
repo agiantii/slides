@@ -25,6 +25,8 @@
   "license": "MIT",
   "devDependencies": {
     "@slidev/cli": "catalog:",
-    "playwright-chromium": "^1.56.1"
+    "playwright-chromium": "^1.56.1",
+    "slidev-addon-typst": "^1.0.2",
+    "slidev-theme-frankfurt": "^1.0.8"
   }
 }
