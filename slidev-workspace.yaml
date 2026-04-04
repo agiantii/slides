@@ -1,9 +1,9 @@
 baseUrl: /
 
 hero:
-  title: Slidev Workspace Starter
-  description: A starter for Slidev Workspace
+  title: Agiantii Slieds
+  description: A presentation for Agiantii Slieds
 
 sidebar:
-  title: "My Sidebar"
-  githubUrl: "https://github.com/leochiu-a/slidev-workspace"
+  title: "Sidebar"
+  githubUrl: "https://github.com/agiantii/slides"
