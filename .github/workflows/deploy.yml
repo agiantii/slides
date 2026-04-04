@@ -1,36 +1,29 @@
-name: Deploy pages
+name: Auto Push to Server
 
 on:
-  workflow_dispatch:
   push:
-    branches: [master]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
+    branches:
+      - master
 jobs:
-  build-and-push:
+  deploy_job:
     runs-on: ubuntu-latest
-
+    name: deploy
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 24
-
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Install Dependencies
         run: npm install -g pnpm && pnpm install
       - name: Build
         run: pnpm build
       - name: debug
         run: ls 
+      # - name: deploy to github-page
+      #   uses: s0/git-publish-subdir-action@develop
+      #   env:
+      #     REPO: git@github.com:Agiantii/Agiantii.github.io.git
+      #     BRANCH: gh-pages
+      #     FOLDER: dist
+      #     SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.7
         with:
@@ -40,14 +33,3 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "./dist" # 直接把dist传到服务器 
           target: ${{ secrets.TARGET }}
-  # deploy-github:
-  #   environment:
-  #     name: github-pages
-  #     url: ${{ steps.deployment.outputs.page_url }}
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   name: Deploy
-  #   steps:
-  #     - name: Deploy to GitHub Pages
-  #       id: deployment
-  #       uses: actions/deploy-pages@v4
