@@ -7,6 +7,7 @@
     "preview": "slidev-workspace preview",
     "help": "slidev-workspace --help",
     "slides:deploy": "node scripts/push_dist_to_server.js",
+    "slides:buildAndDeploy": "slidev-workspace build && node scripts/push_dist_to_server.js",
     "build": "slidev-workspace build"
   },
   "dependencies": {

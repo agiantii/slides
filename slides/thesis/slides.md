@@ -1,10 +1,12 @@
 ---
-theme:  ..\..\theme\slidev-theme-frankfurt
+theme:  slidev-theme-frankfurt-red
+# theme:  ..\..\theme\slidev-theme-frankfurt
 colorSchema: auto
 author: agiantii
 date: 2025/12/27
 transition: slide-left
 title: 浙江传媒学院开题答辩
+routerMode: hash
 ---
 
 <br>

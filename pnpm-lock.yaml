@@ -94,6 +94,34 @@ importers:
         specifier: ^3.5.29
         version: 3.5.32(typescript@5.9.3)
 
+  theme/slidev-theme-frankfurt-red:
+    dependencies:
+      '@slidev/theme-default':
+        specifier: ^0.25.0
+        version: 0.25.0
+      '@slidev/theme-seriph':
+        specifier: ^0.25.0
+        version: 0.25.0
+      '@slidev/types':
+        specifier: ^52.1.0
+        version: 52.14.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@vue/compiler-sfc@3.5.32)(markdown-it-async@2.2.0)(typescript@5.9.3)(vite@7.3.1(@types/node@22.18.13)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.2))
+      codemirror-theme-vars:
+        specifier: ^0.1.2
+        version: 0.1.2
+      prism-theme-vars:
+        specifier: ^0.2.5
+        version: 0.2.5
+      theme-vitesse:
+        specifier: ^1.0.0
+        version: 1.0.0
+    devDependencies:
+      '@slidev/cli':
+        specifier: ^52.1.0
+        version: 52.14.1(@emnapi/core@1.7.1)(@emnapi/runtime@1.7.1)(@nuxt/kit@3.20.0)(@types/markdown-it@14.1.2)(@types/node@22.18.13)(@vue/compiler-sfc@3.5.32)(lightningcss@1.30.2)(markdown-it-async@2.2.0)(markdown-it@14.1.1)(playwright-chromium@1.56.1)(postcss@8.5.8)
+      playwright-chromium:
+        specifier: ^1.55.0
+        version: 1.56.1
+
 packages:
 
   '@antfu/install-pkg@1.1.0':

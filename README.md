@@ -1,7 +1,7 @@
 # About
 
-Powered by [`slidev-workspace`](https://github.com/leochiu-a/slidev-workspace)
-
+- Powered by [`slidev-workspace`](https://github.com/leochiu-a/slidev-workspace)
+- slidev-theme-frankfurt-red 改自 [slidev-theme-frankfurt](https://github.com/MuTsunTsai/slidev-theme-frankfurt)
 ## 📦 Demo
 
 Check out the live demo: https://leochiu-a.github.io/slidev-workspace-starter/
