@@ -8,7 +8,8 @@
     "help": "slidev-workspace --help",
     "slides:deploy": "node scripts/push_dist_to_server.js",
     "slides:buildAndDeploy": "slidev-workspace build && node scripts/push_dist_to_server.js",
-    "build": "slidev-workspace build"
+    "build": "slidev-workspace build",
+    "slides:build": "slidev-workspace build"
   },
   "dependencies": {
     "node-ssh": "^13.2.1",

@@ -10,8 +10,8 @@ docs:[docs](https://leochiu-a.github.io/slidev-workspace/)
 ## note
 
 ### pnpm build 
-  - pnpm build 构建所有 slides/*
-  - pnpm build project-1
+  - pnpm slides:build 构建所有 slides/*
+  - pnpm slides:build cs\start\cpp-start
     - 构建 slides/project-1 并修改 ./dist/ 中项目的链接
 ### cover
 ```
