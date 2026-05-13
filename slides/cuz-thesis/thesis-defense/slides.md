@@ -11,18 +11,26 @@ routerMode: hash
 
 <br>
 
+<div>
+<!-- <div class="font-serif"> -->
+
 # 浙江传媒学院毕业论文答辩
 
+</div>
+
 <br>
 
 <br>
+
+<div class="font-serif w-full py-8 flex flex-col gap-8 text-center">
+  <div class="text-3xl font-semibold">媒体工程学院</div> 
+  <div class="text-2xl">指导教师：张浩斌</div>
+  <div class="text-2xl">答辩人：林君阳</div>
+</div>
+
 <img src="./assets/cuz_logo.png" 
-class="bottom-4 opacity-80 w-60% mx-auto block"
+class="bottom-3 opacity-80 w-60% mx-auto block"
 alt="alt text"/>
-
-#### 媒体工程学院
-#### 导师： 张浩斌
-#### 答辩人： 林君阳
 <!-- <div class="pt-12">
   <span @click="next" class="px-2 p-1 rounded cursor-pointer hover:bg-white hover:bg-opacity-10">
     Press Space for next page <carbon:arrow-right class="inline"/>
@@ -164,7 +172,7 @@ flowchart TD
 
 <div class="overflow-auto max-h-96 w-full">
 
-```ts {3-21|25-44|45-88|*}
+```ts {3-24|25-44|45-88|*}
     this.server = new Server({
       port: parseInt(wsBasePort, 10),
       // 文档初始化钩子：加载数据文档到服务器内存
