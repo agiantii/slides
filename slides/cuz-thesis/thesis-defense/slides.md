@@ -14,16 +14,15 @@ routerMode: hash
 <div>
 <!-- <div class="font-serif"> -->
 
-# 浙江传媒学院毕业论文答辩
+# 浙江传媒学院毕业设计答辩
 
 </div>
 
-<br>
 
-<br>
 
-<div class="font-serif w-full py-8 flex flex-col gap-8 text-center">
-  <div class="text-3xl font-semibold">媒体工程学院</div> 
+<div class="font-serif w-full py-8 flex flex-col gap-4 text-center">
+  <div class="text-3xl font-semibold">基于Slidev的智能幻灯片协作平台设计与开发</div> 
+  <!-- <div class="text-3xl font-semibold">媒体工程学院</div>  -->
   <div class="text-2xl">指导教师：张浩斌</div>
   <div class="text-2xl">答辩人：林君阳</div>
 </div>
