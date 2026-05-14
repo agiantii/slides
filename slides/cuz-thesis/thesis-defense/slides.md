@@ -354,7 +354,7 @@ flowchart TD
 
 <div class="flex justify-center">
 <video class="h-90 center" controls>
-    <source src="./assets/shared-doc.mkv">
+    <source src="./assets/shared-doc.mp4">
 </video>
 </div>
 
