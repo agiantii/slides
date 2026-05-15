@@ -61,7 +61,7 @@ section: 选题缘起
 
 - [Slidev-guide](https://cn.sli.dev/guide/)
 
----
+<!-- ---
 
 # 研究背景
 
@@ -74,7 +74,7 @@ section: 选题缘起
 
 其中，<span v-mark.red="1">Slidev（slide + dev）作为一个基于Web的幻灯片制作工具，不仅支持Vue语法，而且支持丰富的自定义插件，可以让用户以Markdown的形式专注于编写幻灯片的内容，并制作出具有交互式演示功能的、高度可自定义的幻灯片。</span>
 
-综合以上背景，作者设计与开发一个基于Slidev的智能幻灯片协作平台，支持实时协作技术、权限管理系统、AI辅助功能和简单的版本控制。
+综合以上背景，作者设计与开发一个基于Slidev的智能幻灯片协作平台，支持实时协作技术、权限管理系统、AI辅助功能和简单的版本控制。 -->
 
 
 ---
@@ -140,7 +140,7 @@ section: 系统需求分析
 - 在幻灯片空间中，支持树形文档结构，允许用户用拖拽的方式改变树形文档结构，可以修改、删除文档。
 - 支持对幻灯片评论，方便团队协作和交流。 -->
 
----
+<!-- ---
 
 # 系统非功能性需求分析
 
@@ -148,12 +148,7 @@ section: 系统需求分析
 - 支持一定规模的并发编辑
 - VSCode的编辑器体验
 - 支持暗色/亮色主题的切换
-- 所有核心API请求，都需要通过JWT认证以及权限校验
-<!-- - 作为一个幻灯片协作平台，在常规网络条件下，页面加载与常规请求的响应时间应该在可接受的范围内，并支持一定规模的并发编辑，不会出现内容不一致、过分卡顿的情况。
-
-- 为了让用户能快速上手，尽量实现VSCode的编辑器体验，用合适的功能图标让交互逻辑清晰、直观，同时支持常见的快捷键使用以及调节各个窗口的大小，让幻灯片创作更加便捷、容易上手。同时针对用户对主题的偏好，本平台支持暗色/亮色主题的切换，以黑白配色为主。
-
-- 对于所有核心API请求，都需要通过JWT认证以及权限校验，同时后端需要使用bcrypt对密码加密存储到数据库，在Websocket连接前也需要进行JWT认证和权限校验，保证协作正常。 -->
+- 所有核心API请求，都需要通过JWT认证以及权限校验 -->
 
 ---
 section: 系统设计
@@ -173,7 +168,7 @@ src="./assets/智能幻灯片协作平台整体架构图.drawio.png">
 <img class="w-80%" src="./assets/核心实体关系图-v2.drawio.png">
 
 
----
+<!-- ---
 
 # RESTful API 核心接口设计
 
@@ -194,7 +189,7 @@ src="./assets/智能幻灯片协作平台整体架构图.drawio.png">
 | 插件管理         | /api/plugins/*                           | 幻灯片插件的查询、更新等         |
 | 注册码管理       | /api/registration-codes/*                | 注册码的生成、查询等            |
 
-</div>
+</div> -->
 
 ---
 section: 实现效果
@@ -267,8 +262,8 @@ layout: image
 
 # AI大纲生成
 
-<div class="overflow-auto max-h-90">
-<img src="./assets/ai-assistent-outline.png">
+<div class="overflow-auto max-h-80%">
+<img src="./assets/web-rendering/editor-ai-assistent-outline-2.png">
 </div>
 
 ---
@@ -278,7 +273,7 @@ layout: image
 为实现代码提示功能，编辑器挂载时会调用snippetApi.findAll()获取所有用户自定义的代码片段列表，
 并注入到CodeMirror的autocompletion配置，之后当用户输入时，就会过滤出snippets数组中name匹配的代码片段。
 
-<img src="./assets/snnipets-intelligence.png">
+<img class="h-70%" src="./assets//web-rendering/snnipets-intelligence-2.png">
 ---
 
 # 评论
