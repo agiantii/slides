@@ -85,19 +85,180 @@ section: 选题缘起
 - 为什么选择用Slidev制作PPT
   - 可以将构建好的幻灯片部署于服务器，不仅方便他人查阅，而且不需要担心忘记带PPT
   - 相比于Microsoft PowerPoint 和 Apple Keynote,这样让制作者专注于内容本身
-  - 同时相对于latex beamer等工具，Markdown语法更为简单易用,且基于vue的slidev有更好的扩展性
+  - 同时相对于latex beamer等工具，Markdown语法更为简单易用,且基于Vue的Slidev有更好的扩展性
   - 相对纯HTML制作的PPT，Slidev内置的丰富组件以及自定义的主题、插件，让幻灯片制作更加可控、方便。
   - 理论上可以实现一切基于Web的效果
 - 为什么需要协作平台
-  - 组会、团队项目等场景下，多人协作制作PPT，这样文本资源的统一管理和版本控制就显得尤为重要，同时因为一般的PPT制作也不需要git等复杂的版本控制工具，所以需要一个简单易用的协作平台
-  - 同时将Mardown所需要的图片、主体模板等资源进行统一放在云端上管理，方便多人使用
-  - 利用AI能提升制作PPT的效率
+  - 将Mardown所需要的图片、主题、视频等资源进行统一放在云端上管理，方便多人使用
 - 市面上已经有了许多基于AI的PPT制作工具，做这个有什么意义
-  - 无法方便地进行多人协作
-  - 无法方便地进行文本资源的统一管理和版本控制
   - 诸如kimi、豆包等工具，所提供的模板和功能较为有限，有些时候需要自己的模板才方便，比如组会、毕设答辩报告等模板
 
 </v-clicks>
+--- 
+section: Slidev渲染PPT的效果
+--- 
+
+# 代码高亮
+<br>
+```cpp 
+int main(){
+  int a,b;
+  cin>>a>>b;
+  cout<<a+b;
+  return 0;
+}
+```
+
+---
+
+# mermaid 
+<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
+```mermaid {theme: 'neutral', scale: 0.8}
+graph TD
+B[Text] --> C{Decision}
+C -->|One| D[Result 1]
+C -->|Two| E[Result 2]
+```
+
+```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
+sequenceDiagram
+    Alice->John: Hello John, how are you?
+    Note over Alice,John: A typical interaction
+```
+</div>
+
+--- 
+
+# $latex$
+
+$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
+
+<div h-3 />
+
+Inline $\sqrt{3x-1}+(1+x)^2$
+
+---
+
+# Shiki Magic Move
+
+````md magic-move {lines: true}
+```ts {*|2|*}
+// step 1
+const author = reactive({
+  name: 'John Doe',
+  books: [
+    'Vue 2 - Advanced Guide',
+    'Vue 3 - Basic Guide',
+    'Vue 4 - The Mystery'
+  ]
+})
+```
+
+```ts {*|1-2|3-4|3-4,8}
+// step 2
+export default {
+  data() {
+    return {
+      author: {
+        name: 'John Doe',
+        books: [
+          'Vue 2 - Advanced Guide',
+          'Vue 3 - Basic Guide',
+          'Vue 4 - The Mystery'
+        ]
+      }
+    }
+  }
+}
+```
+
+```ts
+// step 3
+export default {
+  data: () => ({
+    author: {
+      name: 'John Doe',
+      books: [
+        'Vue 2 - Advanced Guide',
+        'Vue 3 - Basic Guide',
+        'Vue 4 - The Mystery'
+      ]
+    }
+  })
+}
+```
+
+Non-code blocks are ignored.
+
+```vue
+<!-- step 4 -->
+<script setup>
+const author = {
+  name: 'John Doe',
+  books: [
+    'Vue 2 - Advanced Guide',
+    'Vue 3 - Basic Guide',
+    'Vue 4 - The Mystery'
+  ]
+}
+</script>
+```
+````
+
+---
+
+# Clicks Animations
+
+You can add `v-click` to elements to add a click animation.
+
+<div v-click>
+
+This shows up when you click the slide:
+
+```html
+<div v-click>This shows up when you click the slide.</div>
+```
+
+</div>
+
+<br>
+
+<v-click>
+
+The <span v-mark.red="3"><code>v-mark</code> directive</span>
+also allows you to add
+<span v-mark.circle.orange="4">inline marks</span>
+, powered by [Rough Notation](https://roughnotation.com/):
+
+```html
+<span v-mark.underline.orange>inline markers</span>
+```
+
+</v-click>
+
+<div mt-20 v-click>
+
+[Learn more](https://sli.dev/guide/animations#click-animation)
+
+</div>
+
+---
+
+# 其他一切基于Web的效果都可以实现
+
+<div class="flex gap-9">
+
+<img class="w-60%" src="./assets/slidev-addon.png">
+<div>
+
+- 算法可视化效果嵌入
+- latex tikz 绘图
+- 在线代码运行
+- 抽签
+- ...
+</div>
+</div>
+
 
 ---
 section: 系统需求分析
@@ -193,6 +354,11 @@ src="./assets/智能幻灯片协作平台整体架构图.drawio.png">
 
 ---
 section: 实现效果
+---
+
+# 演示视频
+
+[演示视频](https://agiantii-oss-local.oss-cn-hangzhou.aliyuncs.com/video/%E6%BC%94%E7%A4%BA%E8%A7%86%E9%A2%91-%E5%9F%BA%E4%BA%8ESlidev%E7%9A%84%E6%99%BA%E8%83%BD%E5%B9%BB%E7%81%AF%E7%89%87%E5%8D%8F%E4%BD%9C%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E4%B8%8E%E5%BC%80%E5%8F%91.mp4)
 ---
 
 # 工作台

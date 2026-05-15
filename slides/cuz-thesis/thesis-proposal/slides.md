@@ -98,7 +98,7 @@ section: 研究内容
 - 格式兼容
 
 --- 
-section: md渲染ppt的优势
+section: Slidev渲染PPT的效果
 --- 
 
 # 代码高亮
